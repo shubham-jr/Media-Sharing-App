@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Media Sharing App</title>
+  </head>
+  <body>
+    <div id="main">
+      <h2 id="header">Media Sharing</h2>
+      <input type="text" id="roomInput" placeholder="Enter room name..." /
+      autocomplete="off">
+      <button type="submit" id="join">Join</button>
+    </div>
+    <div id="video-container">
+      <video id="user-video" autoplay="true" muted="true"></video>
+      <video id="peer-video"></video>
+    </div>
+    <div class="btn-group" id="video-options">
+      <button id="fullMode">Full Screen Mode</button>
+      <button id="hide">Hide</button>
+      <button id="mute">Mute</button>
+      <button id="presentSysAudio">Present(with sys audio)</button>
+      <button id="presentUserAudio">Present(with your audio)</button>
+      <input type="file" id="inputFileElement" />
+      <button id="exit">Exit</button>
+    </div>
+    <div id="status">
+      <p1 id="uploaded">Uploaded </p1>
+      <p1 id="downloaded">Downloaded </p1>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
+</html>

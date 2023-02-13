@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#main {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+}
+
+#header {
+  font-weight: 900;
+  padding: 10px 10px;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  padding: 4px 4px;
+}
+
+#user-video {
+  padding: 12px 12px;
+  height: 300px;
+  width: auto;
+}
+
+#peer-video {
+  padding: 12px 12px;
+  height: 300px;
+  width: auto;
+}
+
+/* copied */
+
+.btn-group {
+  display: none;
+  justify-content: center;
+}
+
+.btn-group button {
+  background-color: #04aa6d; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group input {
+  background-color: #04aa6d; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+/* options */
+
+#fullMode {
+  display: none;
+}
+
+#presentSysAudio {
+  display: none;
+}
+
+#presentUserAudio {
+  display: none;
+}
+
+#uploaded {
+  display: none;
+  text-align: center;
+  padding: 12px 0px;
+}
+
+#downloaded {
+  display: none;
+  text-align: center;
+  padding: 12px 0px;
+}
